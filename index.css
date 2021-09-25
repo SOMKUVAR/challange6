@@ -135,14 +135,15 @@ toggle buttton
 /***********
 hover
 ************/
-button:hover {
+button:hover,button:focus {
   border: 2px solid hsl(232, 13%, 33%);
   color: hsl(232, 13%, 33%);
   background-color: white;
   background-image: none;
   cursor: pointer;
 }
-.professional button:hover {
+.professional button:hover,
+.professional button:focus {
   background-color: transparent;
   border: 2px solid white;
   color: white;
