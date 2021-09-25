@@ -89,7 +89,7 @@ button {
   border: none;
   border-radius: 0.5rem;
   color: white;
-  outline: none;
+  outline: 0;
 }
 .professional button {
   background-color: white;
@@ -142,13 +142,14 @@ button:hover,button:focus {
   background-color: white;
   background-image: none;
   cursor: pointer;
-  outline: none;
+  outline: 0;
 }
 .professional button:hover,
 .professional button:focus {
   background-color: transparent;
   border: 2px solid white;
   color: white;
+  outline: 0;
 }
 @media (max-width: 1191px) {
   body {
