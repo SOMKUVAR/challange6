@@ -144,6 +144,9 @@ button:hover,button:focus {
   cursor: pointer;
   outline: 0;
 }
+button:focus{
+border: none;
+}
 .professional button:hover,
 .professional button:focus {
   background-color: transparent;
