@@ -89,6 +89,7 @@ button {
   border: none;
   border-radius: 0.5rem;
   color: white;
+  outline: none;
 }
 .professional button {
   background-color: white;
