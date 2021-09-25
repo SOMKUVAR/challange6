@@ -141,6 +141,7 @@ button:hover,button:focus {
   background-color: white;
   background-image: none;
   cursor: pointer;
+  outline: none;
 }
 .professional button:hover,
 .professional button:focus {
