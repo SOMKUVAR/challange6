@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-image: url(./images/bg-top.svg), url(./images/bg-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top right, bottom left;
+  background-color: hsl(240, 78%, 98%);
+  margin: 0 auto;
+  padding: 3rem;
+}
+/*****************
+Typography
+*****************/
+body {
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  color: hsl(233, 13%, 49%);
+}
+.price {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: hsl(232, 13%, 33%);
+}
+.professional,
+.professional .price {
+  color: white;
+}
+button {
+  font-weight: 700;
+}
+.head {
+  color: hsl(234, 14%, 74%);
+}
+/****************
+layout
+*****************/
+.container {
+  width: 82%;
+  margin: 0 auto;
+}
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+main {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.card {
+  padding: 2rem;
+  background-color: white;
+  width: 33%;
+  height: 90%;
+  margin-top: 1rem;
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+  box-shadow: rgba(116, 164, 216, 0.2) 0px 8px 24px;
+}
+.professional {
+  background-image: linear-gradient(
+    to bottom,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  box-shadow: none;
+  height: 100%;
+  margin-top: 0;
+  border-radius: 0.5rem;
+}
+button {
+  background-image: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  width: 100%;
+  padding: 1rem 0;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  color: white;
+}
+.professional button {
+  background-color: white;
+  background-image: none;
+  color: hsl(237, 63%, 64%);
+}
+.basic {
+  border-radius: 1rem 0 0 1rem;
+}
+.master {
+  border-radius: 0 1rem 1rem 0;
+}
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/************
+toggle buttton
+************/
+#toggle {
+  width: 3.7rem;
+  height: 2rem;
+  background-image: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  border-radius: 1rem;
+  padding: 0.2rem;
+  margin: 1rem;
+}
+.circle {
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background-color: white;
+  margin-left: 52%;
+  cursor: pointer;
+}
+.left {
+  margin: 0;
+}
+/***********
+hover
+************/
+button:hover {
+  border: 2px solid hsl(232, 13%, 33%);
+  color: hsl(232, 13%, 33%);
+  background-color: white;
+  background-image: none;
+  cursor: pointer;
+}
+.professional button:hover {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+@media (max-width: 1191px) {
+  body {
+    padding: 1rem;
+    background-image: url(./images/bg-top.svg);
+    background-position: right -180px top 00px;
+    padding-top: 3rem;
+  }
+  main {
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    width: 100%;
+  }
+  .card {
+    max-width: 400px;
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+  }
+}
